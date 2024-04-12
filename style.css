@@ -1182,6 +1182,10 @@ img {
   width: calc(100% - 78px);
   padding-left: 30px; }
 
+.center-menu {
+    display: flex;
+    justify-content: center;
+}
 /* :: 14.0 Footer Area CSS */
 .footer-area {
   position: relative;
