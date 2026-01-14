@@ -882,6 +882,69 @@ img {
     .single-album-area .album-info p {
       margin-bottom: 0; }
 
+.latest-albums-area .release-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 18px;
+  background-color: #0f0f10;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition: transform 300ms ease, box-shadow 300ms ease;
+  transition: transform 300ms ease, box-shadow 300ms ease; }
+  .latest-albums-area .release-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: transform 450ms ease, filter 450ms ease;
+    transition: transform 450ms ease, filter 450ms ease; }
+  .latest-albums-area .release-card:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0) 45%), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 45%, rgba(0, 0, 0, 0.35) 100%);
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: opacity 300ms ease;
+    transition: opacity 300ms ease;
+    z-index: 1; }
+  .latest-albums-area .release-card:after {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    opacity: 0;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    pointer-events: none;
+    -webkit-transition: opacity 300ms ease, transform 300ms ease;
+    transition: opacity 300ms ease, transform 300ms ease;
+    z-index: 2; }
+  .latest-albums-area .release-card:hover,
+  .latest-albums-area .release-card:focus-visible {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35); }
+  .latest-albums-area .release-card:hover img,
+  .latest-albums-area .release-card:focus-visible img {
+    -webkit-transform: scale(1.07);
+    transform: scale(1.07);
+    filter: saturate(1.05) contrast(1.02); }
+  .latest-albums-area .release-card:hover:before,
+  .latest-albums-area .release-card:focus-visible:before {
+    opacity: 1; }
+  .latest-albums-area .release-card:hover:after,
+  .latest-albums-area .release-card:focus-visible:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  .latest-albums-area .release-card:focus {
+    outline: none; }
+
 .albums-slideshow {
   position: relative;
   z-index: 1; }
