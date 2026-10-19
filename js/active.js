@@ -3,12 +3,22 @@
 
     var browserWindow = $(window);
 
-    // :: 1.0 Preloader Active Code
-    browserWindow.on('load', function () {
-        $('.preloader').fadeOut('slow', function () {
-            $(this).remove();
-        });
+    // :: 1.0 Preloader Active Code (Optimized: Immediate dismiss with safety timeout)
+    var preloaderRemoved = false;
+    function hidePreloader() {
+        if (!preloaderRemoved) {
+            preloaderRemoved = true;
+            $('.preloader').fadeOut(250, function () {
+                $(this).remove();
+            });
+        }
+    }
+
+    $(document).ready(function () {
+        setTimeout(hidePreloader, 100);
     });
+    browserWindow.on('load', hidePreloader);
+    setTimeout(hidePreloader, 1200);
 
     // :: 2.0 Nav Active Code
     if ($.fn.classyNav) {
