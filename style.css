@@ -6196,6 +6196,326 @@ img {
   .single-web-icon:hover {
     box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.15); }
 
+/* ====== Sub-Record Studio Custom Enhancements ====== */
+
+/* 1. Video Modal Popup */
+.srs-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(8px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.srs-modal-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  background: #111111;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+}
+.srs-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #444;
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 1;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.srs-modal-close:hover {
+  background: #e53637;
+  border-color: #e53637;
+  transform: rotate(90deg);
+}
+.srs-video-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  background: #000;
+}
+.srs-video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.srs-modal-info {
+  padding: 18px 24px;
+  background: #161616;
+}
+.srs-modal-info h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.srs-modal-info p {
+  color: #aaaaaa;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+/* 2. Portfolio Category Filter Pills */
+.srs-portfolio-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.srs-portfolio-filter button {
+  background: #1c1c1c;
+  color: #d1d1d1;
+  border: 1px solid #333333;
+  padding: 9px 20px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.srs-portfolio-filter button:hover {
+  background: #2a2a2a;
+  color: #ffffff;
+  border-color: #555555;
+}
+.srs-portfolio-filter button.active {
+  background: #e53637;
+  color: #ffffff;
+  border-color: #e53637;
+  box-shadow: 0 4px 15px rgba(229, 54, 55, 0.4);
+}
+
+/* 3. Interactive Pricing Cards */
+.srs-pricing-section {
+  padding: 70px 0 100px;
+  background: #0d0d0d;
+}
+.srs-pricelist-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.srs-pricelist-tab-btn {
+  background: #1a1a1a;
+  color: #bbb;
+  border: 1px solid #333;
+  padding: 11px 24px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.srs-pricelist-tab-btn:hover {
+  background: #272727;
+  color: #fff;
+  border-color: #666;
+}
+.srs-pricelist-tab-btn.active {
+  background: #e53637;
+  color: #fff;
+  border-color: #e53637;
+  box-shadow: 0 5px 20px rgba(229, 54, 55, 0.35);
+}
+.srs-pricing-card {
+  background: #161616;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  padding: 30px 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.srs-pricing-card:hover {
+  transform: translateY(-6px);
+  border-color: #e53637;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+.srs-pricing-card.featured {
+  border-color: #e53637;
+  background: linear-gradient(180deg, #201516 0%, #151515 100%);
+  box-shadow: 0 8px 30px rgba(229, 54, 55, 0.2);
+}
+.srs-pricing-badge {
+  position: absolute;
+  top: -12px;
+  right: 25px;
+  background: #e53637;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(229, 54, 55, 0.5);
+}
+.srs-price-header {
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #262626;
+}
+.srs-price-header h4 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.srs-price-header p {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+.srs-price-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.srs-price-amount .currency {
+  color: #e53637;
+  font-size: 18px;
+  font-weight: 700;
+}
+.srs-price-amount .value {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+}
+.srs-price-amount .period {
+  color: #777;
+  font-size: 13px;
+}
+.srs-price-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+  flex: 1;
+}
+.srs-price-features li {
+  color: #ccc;
+  font-size: 13.5px;
+  padding: 8px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.45;
+  border-bottom: 1px dashed #222;
+}
+.srs-price-features li:last-child {
+  border-bottom: none;
+}
+.srs-price-features li i.check {
+  color: #2ecc71;
+  margin-top: 3px;
+  font-size: 14px;
+}
+.srs-price-features li i.info {
+  color: #e53637;
+  margin-top: 3px;
+  font-size: 14px;
+}
+.srs-booking-btn {
+  background: #25D366;
+  color: #fff !important;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+.srs-booking-btn:hover {
+  background: #1eb956;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+}
+
+/* 4. Artist Page Enhancements */
+.srs-artist-badge {
+  display: inline-block;
+  background: rgba(229, 54, 55, 0.15);
+  border: 1px solid rgba(229, 54, 55, 0.4);
+  color: #ff6b6c;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.srs-release-item-card {
+  background: #171717;
+  border: 1px solid #292929;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 12px;
+  transition: all 0.25s ease;
+}
+.srs-release-item-card:hover {
+  background: #202020;
+  border-color: #444;
+  transform: translateX(4px);
+}
+.srs-release-thumb {
+  width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.srs-release-details h6 {
+  color: #fff;
+  font-size: 15px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+.srs-release-details p {
+  color: #888;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
 /* ====== The End ====== */
 
 /*# sourceMappingURL=style.css.map */
+

@@ -1,0 +1,33 @@
+name: Sync YouTube Portfolio
+
+on:
+  schedule:
+    # Run automatically every 6 hours
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI anytime
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run YouTube Sync Script
+        run: |
+          python scripts/sync-youtube.py
+
+      - name: Commit and Push Changes if New Videos Found
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/youtube-portfolio.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(portfolio): auto-sync latest YouTube videos" && git push)

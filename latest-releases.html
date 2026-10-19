@@ -102,119 +102,78 @@
     <!-- ##### Breadcumb Area End ##### -->
 
     <!-- ##### Album Catagory Area Start ##### -->
-    <section class="album-catagory section-padding-100-0">
+    <section class="album-catagory section-padding-100-0" style="background:#0f0f11; padding-bottom: 70px;">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <!--  -->
+                <div class="col-12 text-center mb-4">
+                    <span class="srs-artist-badge"><i class="fa-brands fa-youtube mr-1"></i> Official YouTube & Streaming Releases</span>
+                    <h2 style="color:#fff; font-weight:800; margin-top:8px; margin-bottom:12px;">Portofolio & Hasil Produksi</h2>
+                    <p style="color:#9e9ea8; max-width:700px; margin:0 auto 30px; font-size:15px; line-height:1.6;">
+                        Karya-karya produksi Sub-Record Studio mulai dari original singles, rekaman multi-cam Live at The Living Room, aransemen cover song, hingga tutorial audio engineering.
+                    </p>
+
+                    <!-- Dynamic Category Filter Pills -->
+                    <div class="srs-portfolio-filter">
+                        <button class="active" data-filter="all"><i class="fa fa-th-large mr-1"></i> Semua Portofolio</button>
+                        <button data-filter="original"><i class="fa fa-compact-disc mr-1"></i> Original Song & Single</button>
+                        <button data-filter="live"><i class="fa fa-guitar mr-1"></i> Live Sessions & Wedding</button>
+                        <button data-filter="cover"><i class="fa fa-headphones mr-1"></i> Cover Songs</button>
+                        <button data-filter="tutorial"><i class="fa fa-sliders mr-1"></i> Production Tips</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="row oneMusic-albums">
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item">
-                    <a href="https://youtu.be/RMXIFvJ0xCE?si=3PTEljc22coEhaSA" class="single-album" title="Pelabuhan - Sub-Record Studio">
-                        <img src="img/bg-img/pelabuhan.webp" alt="Pelabuhan" loading="lazy" decoding="async">
-                        <div class="album-info">
-                            <a href="https://youtu.be/RMXIFvJ0xCE?si=3PTEljc22coEhaSA">
-                                <h5>Pelabuhan</h5>
-                            </a>
-                            <p>Cindy Leivana</p>
+            <!-- Dynamic YouTube Grid Container -->
+            <div class="row" id="srs-portfolio-grid">
+                <!-- Initial Fallback for SEO / Non-JS -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 srs-portfolio-card" data-category="original">
+                    <div class="single-album-area h-100" style="background:#151515; border-radius:10px; overflow:hidden; border:1px solid #282828;">
+                        <a href="https://youtu.be/rth0Dc1wh7E" target="_blank">
+                            <img src="https://i3.ytimg.com/vi/rth0Dc1wh7E/hqdefault.jpg" alt="Dhandy & Dhanty - Mengertilah" style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+                        </a>
+                        <div class="album-info p-3">
+                            <h6 style="color:#fff; font-size:14px; margin-bottom:6px;">Dhandy & Dhanty - Mengertilah (Official MV)</h6>
+                            <p style="color:#aaa; font-size:12px;">Dhandy & Dhanty • Original Song</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item">
-                    <a href="https://www.youtube.com/watch?v=0O9ryNw0lNk" class="single-album" title="Khayalku - Sub-Record Studio">
-                        <img src="img/bg-img/KhayalkuArtwork.webp" alt="Khayalku" loading="lazy" decoding="async">
-                        <div class="album-info">
-                            <a href="https://www.youtube.com/watch?v=0O9ryNw0lNk">
-                                <h5>Khayalku</h5>
-                            </a>
-                            <p>Cindy Leivana</p>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 srs-portfolio-card" data-category="original">
+                    <div class="single-album-area h-100" style="background:#151515; border-radius:10px; overflow:hidden; border:1px solid #282828;">
+                        <a href="https://youtu.be/RMXIFvJ0xCE" target="_blank">
+                            <img src="img/bg-img/pelabuhan.webp" alt="Pelabuhan" style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+                        </a>
+                        <div class="album-info p-3">
+                            <h6 style="color:#fff; font-size:14px; margin-bottom:6px;">Cindy Leivana - Pelabuhan (Official Lyric Video)</h6>
+                            <p style="color:#aaa; font-size:12px;">Cindy Leivana • Original Song</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <!-- Single Album -->
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item t c p">
-                    <a href="https://open.spotify.com/intl-id/track/7iwY2lKVl2l1Tw4UWVn2LE?si=43cf240e3a0447bd" class="single-album" title="Listen to Abrakadabra by Cindy Leivana on Spotify">
-                        <img src="img/bg-img/ABRAKADABRA_ARTWORK_v001.webp" alt="" loading="lazy" decoding="async">
-                        <div class="album-info">
-                            <a href="https://open.spotify.com/intl-id/track/7iwY2lKVl2l1Tw4UWVn2LE?si=43cf240e3a0447bd">
-                                <h5>Abrakadabra</h5>
-                            </a>
-                            <p>Cindy Leivana</p>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 srs-portfolio-card" data-category="original">
+                    <div class="single-album-area h-100" style="background:#151515; border-radius:10px; overflow:hidden; border:1px solid #282828;">
+                        <a href="https://www.youtube.com/watch?v=0O9ryNw0lNk" target="_blank">
+                            <img src="img/bg-img/KhayalkuArtwork.webp" alt="Khayalku" style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+                        </a>
+                        <div class="album-info p-3">
+                            <h6 style="color:#fff; font-size:14px; margin-bottom:6px;">Cindy Leivana - Khayalku (Official MV)</h6>
+                            <p style="color:#aaa; font-size:12px;">Cindy Leivana • Original Song</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <!-- Single Album -->
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item t c p">
-                    <a href="https://open.spotify.com/track/0fLekOVqVPUqJDdO7hNFca" class="single-album" title="Listen to Sofa by Cindy Leivana on Spotify">
-                        <img src="img/bg-img/artworkSofa.webp" alt="" loading="lazy" decoding="async">
-                        <div class="album-info">
-                            <a href="https://open.spotify.com/track/0fLekOVqVPUqJDdO7hNFca">
-                                <h5>Sofa</h5>
-                            </a>
-                            <p>Cindy Leivana</p>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 srs-portfolio-card" data-category="live">
+                    <div class="single-album-area h-100" style="background:#151515; border-radius:10px; overflow:hidden; border:1px solid #282828;">
+                        <a href="https://www.youtube.com/watch?v=fhXVG2hFoYE" target="_blank">
+                            <img src="https://i3.ytimg.com/vi/fhXVG2hFoYE/hqdefault.jpg" alt="Khayalku Live at The Living Room" style="width:100%; aspect-ratio:16/9; object-fit:cover;">
+                        </a>
+                        <div class="album-info p-3">
+                            <h6 style="color:#fff; font-size:14px; margin-bottom:6px;">Khayalku — Cindy Leivana | Live at The Living Room</h6>
+                            <p style="color:#aaa; font-size:12px;">Cindy and The Fairies • Live Session</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
-
-                <!-- Single Album -->
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item t c p">
-                    <a href="https://open.spotify.com/track/6eLAvAOyumqmmWk0hchPZy" class="single-album" title="Listen to Bersamanya by Marrez on Spotify">
-                        <img src="img/bg-img/artworkbersamanya.webp" alt="" loading="lazy" decoding="async">
-                        <div class="album-info">
-                            <a href="https://open.spotify.com/track/6eLAvAOyumqmmWk0hchPZy">
-                                <h5>Bersamanya</h5>
-                            </a>
-                            <p>Marrez</p>
-                        </div>
-                    </a>
-                </div>
-
-
-                <!-- Single Album -->
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item t c p">
-                    <a href="https://open.spotify.com/intl-id/track/1rm7OLwZnsrbswDmx9MCcM" class="single-album" title="Listen to Pulang Sayang by Cindy Leivana on Spotify">
-                        <img src="img/bg-img/puyangartwork.webp" alt="" loading="lazy" decoding="async">
-                        <div class="album-info">
-                            <a href="https://open.spotify.com/intl-id/track/1rm7OLwZnsrbswDmx9MCcM">
-                                <h5>Pulang Sayang</h5>
-                            </a>
-                            <p>Cindy Leivana</p>
-                        </div>
-                    </>
-                </div>
-
-                <!-- Single Album -->
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item s e q">
-                    <a href="https://open.spotify.com/intl-id/track/0nnFJKwoivtTfG00eTjFDy" class="single-album" title="Listen to Sunflowers - Band Version by KEZHIKI on Spotify">
-                        <img src="img/bg-img/SunflowersBand.webp" alt="" loading="lazy" decoding="async">
-                        <div class="album-info">
-                            <a href="https://open.spotify.com/intl-id/track/0nnFJKwoivtTfG00eTjFDy">
-                                <h5>Sunflowers - Band Version</h5>
-                            </a>
-                            <p>KEZHIKI</p>
-                        </div>
-                    </>
-                </div>
-
-                <!-- Single Album -->
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2 single-album-item w f r">
-                    <a href="https://open.spotify.com/intl-id/track/2vkGi7DVMIIVmSC8KNIGpq" class="single-album" title="Listen to Sunflowers by Kezhiki on Spotify">
-                        <img src="img/bg-img/sunflowersartwork.webp" alt="" loading="lazy" decoding="async">
-                        <div class="album-info">
-                            <a href="https://open.spotify.com/intl-id/track/2vkGi7DVMIIVmSC8KNIGpq">
-                                <h5>Sunflowers</h5>
-                            </a>
-                            <p>Kezhiki</p>
-                        </div>
-                    </>
-                </div>
-
-             
-
             </div>
         </div>
+    </section>
+    <!-- ##### Album Catagory Area End ##### -->
 
     <!-- ##### Contact Area Start ##### -->
     <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/srsBUMN2.webp);">
@@ -315,6 +274,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- Active js -->
     <script src="js/active.js"></script>
     <script src="https://kit.fontawesome.com/cbda7c90b0.js" crossorigin="anonymous" defer></script>
+    <!-- YouTube Portfolio Dynamic Loader & Video Modal -->
+    <script src="js/youtube-portfolio.js"></script>
 
 </body>
 

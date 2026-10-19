@@ -1,0 +1,165 @@
+{
+  "artists": [
+    {
+      "id": "cindy-leivana",
+      "name": "Cindy Leivana",
+      "slug": "cindy-leivana.html",
+      "role": "Singer-Songwriter & Frontwoman",
+      "genre": "Pop / Orchestral Pop / Ballad",
+      "image": "img/bg-img/PPCindy.png",
+      "banner": "img/bg-img/fotoPanggung.jpg",
+      "instagram": "https://www.instagram.com/cindyleivanaa/",
+      "instagram_handle": "@cindyleivanaa",
+      "spotify_id": "4Q68xWoeqgI4YBI0ENBzJF",
+      "spotify_url": "https://open.spotify.com/artist/4Q68xWoeqgI4YBI0ENBzJF",
+      "short_bio": "Juara 2 FLS2N Nasional & Finalis La Academia Junior 2 SCTV. Frontwoman Cindy and The Fairies dengan sentuhan orkestrasi megah.",
+      "bio": "Cindy Leivana, berbasis di Yogyakarta, telah meraih prestasi membanggakan di bidang seni vokal, di antaranya Juara 2 Festival & Lomba Seni Siswa Nasional (FLS2N) dan finalis ajang bergengsi La Academia Junior 2 yang disiarkan di SCTV. Tampil bersama band bentukannya, Cindy and The Fairies, Cindy kerap memadukan nuansa orkestrasi yang kaya dan dinamis ke dalam setiap karyanya. Sebagai talent utama di bawah manajemen Sub-Record Studio, Cindy aktif merilis karya orisinil, video musik, hingga pertunjukan live profesional untuk wedding dan festival.",
+      "releases_with_studio": [
+        {
+          "title": "Pelabuhan",
+          "type": "Single / Official Lyric Video",
+          "year": "2025",
+          "youtube_url": "https://youtu.be/RMXIFvJ0xCE?si=3PTEljc22coEhaSA",
+          "youtube_id": "RMXIFvJ0xCE",
+          "cover_img": "img/bg-img/pelabuhan.png",
+          "role": "Composer, Lyricist, Lead Vocal (Produced by Sub-Record Studio)"
+        },
+        {
+          "title": "Khayalku",
+          "type": "Single / Official Music Video",
+          "year": "2025",
+          "youtube_url": "https://www.youtube.com/watch?v=0O9ryNw0lNk",
+          "youtube_id": "0O9ryNw0lNk",
+          "cover_img": "img/bg-img/KhayalkuArtwork.png",
+          "role": "Composer, Lead Vocal (Arranged & Produced by Sub-Record Studio)"
+        },
+        {
+          "title": "Abrakadabra",
+          "type": "Single / Official Lyric Video",
+          "year": "2025",
+          "youtube_url": "https://www.youtube.com/watch?v=D35vvI4Cm6Q",
+          "youtube_id": "D35vvI4Cm6Q",
+          "cover_img": "img/bg-img/ABRAKADABRA ARTWORK_v001.png",
+          "role": "Lead Vocal, Composer (Mixing & Mastering by Sub-Record Studio)"
+        },
+        {
+          "title": "Sofa",
+          "type": "Single / Official MV & Live Session",
+          "year": "2025",
+          "youtube_url": "https://www.youtube.com/watch?v=-eJCVSbtOpQ",
+          "youtube_id": "-eJCVSbtOpQ",
+          "cover_img": "img/bg-img/artworkSofa.jpg",
+          "role": "Lead Vocal (Music Director: Vocaso Galvani / Sub-Record Studio)"
+        },
+        {
+          "title": "Pulang Sayang",
+          "type": "Single / Studio Vocal Showcase",
+          "year": "2025",
+          "youtube_url": "https://open.spotify.com/intl-id/track/1rm7OLwZnsrbswDmx9MCcM",
+          "youtube_id": "TPpBWSKjY58",
+          "cover_img": "img/bg-img/puyangartwork.jpg",
+          "role": "Lead Vocal (Produced at Sub-Record Studio)"
+        }
+      ],
+      "booking_phone": "6282245770851",
+      "booking_text": "Halo Sub-Record Studio, saya tertarik untuk booking talent Cindy Leivana untuk event kami."
+    },
+    {
+      "id": "kezhiki",
+      "name": "KEZHIKI",
+      "slug": "kezhiki.html",
+      "role": "Singer-Songwriter & Creative Pop Artist",
+      "genre": "Indie Pop / Acoustic / Storytelling",
+      "image": "img/bg-img/PPKezhi.png",
+      "banner": "img/bg-img/sunflowersartwork.jpg",
+      "instagram": "https://www.instagram.com/kezhikidiaz/",
+      "instagram_handle": "@kezhikidiaz",
+      "spotify_id": "3livwkjKT7Isa0RNrxZ9eD",
+      "spotify_url": "https://open.spotify.com/artist/3livwkjKT7Isa0RNrxZ9eD",
+      "short_bio": "Singer-songwriter independen berkarakter vokal hangat dengan hits 'Sunflowers' dan rilisan pop manis.",
+      "bio": "Kezhiki Diaz, yang dikenal secara profesional sebagai KEZHIKI, adalah singer-songwriter independen yang memikat hati pendengar dengan vokal lembut dan melodi pop/indie yang intim. Dikenal luas lewat single 'Sunflowers' serta lagu tribute 'It's You', KEZHIKI berkolaborasi dengan Sub-Record Studio untuk mengeksplorasi aransemen full band dan produksi audio tingkat lanjut yang memperkuat karakter lagunya.",
+      "releases_with_studio": [
+        {
+          "title": "Sunflowers - Band Version",
+          "type": "Single / Band Arrangement",
+          "year": "2024",
+          "youtube_url": "https://open.spotify.com/intl-id/track/0nnFJKwoivtTfG00eTjFDy",
+          "cover_img": "img/bg-img/SunflowersBand.jpg",
+          "role": "Singer-Songwriter (Band Arrangement, Recorded & Produced at Sub-Record Studio)"
+        },
+        {
+          "title": "Sunflowers",
+          "type": "Single / Acoustic Version",
+          "year": "2023",
+          "youtube_url": "https://open.spotify.com/intl-id/track/2vkGi7DVMIIVmSC8KNIGpq",
+          "cover_img": "img/bg-img/sunflowersartwork.jpg",
+          "role": "Singer-Songwriter"
+        }
+      ],
+      "booking_phone": "6282245770851",
+      "booking_text": "Halo Sub-Record Studio, saya tertarik untuk booking talent KEZHIKI untuk penampilan musik / kolaborasi."
+    },
+    {
+      "id": "marrez",
+      "name": "Marrez",
+      "slug": "marrez.html",
+      "role": "Pop / Indie Singer-Songwriter",
+      "genre": "Pop Balada / Melancholic Acoustic",
+      "image": "img/bg-img/marrezz.png",
+      "banner": "img/bg-img/artworkbersamanya.png",
+      "instagram": "https://www.instagram.com/marrez___/",
+      "instagram_handle": "@marrez___",
+      "spotify_id": "2ib97wyQUkfY7zZnNtQB1U",
+      "spotify_url": "https://open.spotify.com/artist/2ib97wyQUkfY7zZnNtQB1U",
+      "short_bio": "Penyanyi pop dengan warna suara menyentuh dan penghayatan lirik mendalam lewat single 'Bersamanya'.",
+      "bio": "Marrez adalah solois pop/balada berbakat yang menghadirkan nuansa ketenangan dan emosi mendalam dalam setiap penampilannya. Debut singlenya, 'Bersamanya', dikerjakan secara eksklusif bersama tim Sub-Record Studio dari tahap aransemen, rekaman vokal, hingga mixing-mastering akhir, membuktikan dedikasinya menghadirkan karya berkualitas prima.",
+      "releases_with_studio": [
+        {
+          "title": "Bersamanya",
+          "type": "Single / Debut Release",
+          "year": "2024",
+          "youtube_url": "https://open.spotify.com/intl-id/track/0fLekOVqVPUqJDdO7hNFca",
+          "cover_img": "img/bg-img/artworkbersamanya.png",
+          "role": "Singer-Songwriter (Recorded, Mixed & Mastered at Sub-Record Studio)"
+        }
+      ],
+      "booking_phone": "6282245770851",
+      "booking_text": "Halo Sub-Record Studio, saya ingin mengundang / booking Marrez untuk acara / event kami."
+    },
+    {
+      "id": "anton-yoga",
+      "name": "Anton Yoga",
+      "slug": "anton-yoga.html",
+      "role": "Vocal Director, Arranger & Session Vocalist",
+      "genre": "Vocal Arranging / Acoustic Harmony / Pop Soundtrack",
+      "image": "img/bg-img/anton.png",
+      "banner": "img/bg-img/langit.jpg",
+      "instagram": "https://www.instagram.com/anton.yoga/",
+      "instagram_handle": "@anton.yoga",
+      "spotify_id": "",
+      "spotify_url": "https://www.instagram.com/anton.yoga/",
+      "short_bio": "Vocal Director & Arranger profesional. Menggarap vokal pada OST 'Langit Senja' (Jingga & Senja 2) & talent SRS.",
+      "bio": "Anton Yoga merupakan praktisi vokal, arranger, dan vocal director berpengalaman yang berbasis di Yogyakarta. Kiprahnya meliputi pengarahan teknik vokal di dalam bilik rekaman (recording booth), perancangan harmoni backing vocal, hingga vokal latar pada OST serial nasional 'Langit Senja' (Jingga Dan Senja 2 bersama Yoriko Angeline). Sebagai bagian integral dari Sub-Record Studio, Anton mendampingi para talent dan klien rekaman untuk mencapai performa vokal terbaik.",
+      "releases_with_studio": [
+        {
+          "title": "Langit Senja (OST Jingga & Senja 2)",
+          "type": "Original Soundtrack / Collaboration",
+          "year": "2022",
+          "youtube_url": "https://open.spotify.com/track/43N74kG7uB31HcqdE2B7qV",
+          "cover_img": "img/bg-img/langit.jpg",
+          "role": "Vocal Arrangement & Feature with Yoriko Angeline"
+        },
+        {
+          "title": "Vocal Direction & Backing Harmony (SRS Catalog)",
+          "type": "Production Credits",
+          "year": "2023 - Present",
+          "youtube_url": "https://www.youtube.com/@subrecordstudio",
+          "cover_img": "img/bg-img/KhayalkuArtwork.png",
+          "role": "Vocal Director & Harmony Arranger for Cindy Leivana & Studio Clients"
+        }
+      ],
+      "booking_phone": "6282245770851",
+      "booking_text": "Halo Sub-Record Studio, saya ingin konsultasi jasa Vocal Director / Session Vocalist dengan Anton Yoga."
+    }
+  ]
+}
