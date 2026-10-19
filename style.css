@@ -5755,39 +5755,62 @@ img {
   position: relative;
   z-index: 10;
   width: 100%;
-  height: 385px; }
+  height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 70px; }
   @media only screen and (max-width: 767px) {
     .breadcumb-area {
-      height: 270px; } }
+      height: 270px;
+      padding-top: 50px; } }
+  .breadcumb-area.bg-overlay::after {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.55)), color-stop(65%, rgba(15, 15, 17, 0.85)), to(#0f0f11));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(15, 15, 17, 0.85) 65%, #0f0f11 100%); }
   .breadcumb-area .bradcumbContent {
-    position: absolute;
-    background-color: #fff;
-    width: 552px;
-    bottom: 0;
-    left: 50%;
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 15px;
     z-index: 100;
     text-align: center;
-    padding-top: 40px;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%); }
+    -webkit-transform: none;
+    transform: none;
+    left: auto;
+    bottom: auto; }
     @media only screen and (max-width: 767px) {
       .breadcumb-area .bradcumbContent {
-        width: calc(100% - 60px);
-        padding-top: 30px; } }
+        width: 100%;
+        padding: 10px 15px; } }
     .breadcumb-area .bradcumbContent p {
       line-height: 1.5;
-      font-size: 16px;
-      color: #5f5f5f; }
-    .breadcumb-area .bradcumbContent h2 {
-      font-size: 30px;
-      letter-spacing: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
       text-transform: uppercase;
-      line-height: 1;
-      margin-bottom: 0; }
+      color: #e53637;
+      margin-bottom: 8px; }
+    .breadcumb-area .bradcumbContent h2 {
+      font-size: 38px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #ffffff;
+      margin-bottom: 0;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9); }
       @media only screen and (max-width: 767px) {
         .breadcumb-area .bradcumbContent h2 {
-          font-size: 18px;
-          letter-spacing: 5px; } }
+          font-size: 22px;
+          letter-spacing: 3px; } }
 
 /* :: 16.0 Blog Area CSS */
 .single-blog-post {

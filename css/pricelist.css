@@ -647,10 +647,10 @@
 /* Cover Gallery */
 .srs-cover-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
     margin-bottom: 35px;
-    padding: 22px;
+    padding: 20px;
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.02) 0%, rgba(14, 14, 18, 0.85) 100%);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
@@ -660,16 +660,86 @@
 .srs-cover-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 10px;
-    border-radius: 10px;
+    gap: 14px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    text-decoration: none !important;
     transition: var(--srs-transition);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 .srs-cover-item:hover {
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(229, 169, 59, 0.45);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45), 0 0 15px rgba(229, 169, 59, 0.1);
 }
 
+/* Video Thumbnail with Play Button Badge */
+.srs-cover-thumb {
+    width: 90px;
+    height: 58px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    background: #000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.srs-cover-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.srs-cover-item:hover .srs-cover-thumb img {
+    transform: scale(1.08);
+}
+
+.srs-cover-play-badge {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.srs-cover-play-badge span {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #e53637;
+    color: #ffffff;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2px;
+    box-shadow: 0 2px 8px rgba(229, 54, 55, 0.6);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.srs-cover-item:hover .srs-cover-play-badge {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.srs-cover-item:hover .srs-cover-play-badge span {
+    transform: scale(1.15);
+    background: #ff0000;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.8);
+}
+
+/* Fallback Icon */
 .srs-cover-thumb-icon {
     width: 40px;
     height: 40px;
@@ -684,17 +754,70 @@
     border: 1px solid rgba(229, 54, 55, 0.3);
 }
 
+/* Cover Metadata */
+.srs-cover-details {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.srs-cover-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #ff5252;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.srs-cover-tag i {
+    font-size: 11px;
+}
+
 .srs-cover-details h5 {
     color: #ffffff;
     font-size: 14px;
     margin: 0 0 3px;
     font-weight: 700;
+    line-height: 1.35;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.2s ease;
+}
+
+.srs-cover-item:hover .srs-cover-details h5 {
+    color: var(--srs-gold);
 }
 
 .srs-cover-details p {
     color: var(--srs-text-dim);
-    font-size: 12px;
+    font-size: 11.5px;
     margin: 0;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Action Icon */
+.srs-cover-action {
+    color: var(--srs-text-dim);
+    font-size: 12px;
+    margin-left: 6px;
+    flex-shrink: 0;
+    opacity: 0.7;
+    transition: all 0.2s ease;
+}
+
+.srs-cover-item:hover .srs-cover-action {
+    color: var(--srs-gold);
+    opacity: 1;
+    transform: translate(2px, -2px);
 }
 
 /* Entertainment Meta Strip */
@@ -1053,3 +1176,26 @@
         padding: 40px 20px;
     }
 }
+
+@media only screen and (max-width: 576px) {
+    .srs-cover-gallery {
+        grid-template-columns: 1fr;
+        padding: 14px;
+        gap: 12px;
+    }
+    .srs-cover-item {
+        padding: 10px;
+        gap: 12px;
+    }
+    .srs-cover-thumb {
+        width: 80px;
+        height: 52px;
+    }
+    .srs-cover-details h5 {
+        font-size: 13.5px;
+    }
+    .srs-cover-details p {
+        font-size: 11px;
+    }
+}
+

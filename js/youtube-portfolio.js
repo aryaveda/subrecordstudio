@@ -83,17 +83,24 @@
     }
 
     function createVideoCard(video) {
-        const badgeColor = getCategoryBadgeColor(video.category);
+        const activeCat = (currentCategory !== 'all' && Array.isArray(video.categories) && video.categories.includes(currentCategory))
+            ? currentCategory
+            : video.category;
+        const badgeColor = getCategoryBadgeColor(activeCat);
+        const badgeText = (activeCat === 'live')
+            ? 'Live Session & Performance'
+            : (activeCat === 'original' ? 'Original Song & Single' : (video.category_label || video.category));
+
         const card = document.createElement('div');
         card.className = 'col-12 col-sm-6 col-md-4 col-lg-3 mb-4 srs-portfolio-card';
-        card.setAttribute('data-category', video.category);
+        card.setAttribute('data-category', activeCat);
 
         card.innerHTML = `
             <div class="single-album-area h-100 srs-video-card" style="background:#151515; border-radius:10px; overflow:hidden; border:1px solid #282828; display:flex; flex-direction:column; transition:transform 0.3s ease, box-shadow 0.3s ease;">
                 <div class="srs-thumb-wrap" style="position:relative; width:100%; aspect-ratio:16/9; overflow:hidden; cursor:pointer;">
                     <img src="${video.thumbnail}" alt="${video.title}" style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;" class="srs-card-img" loading="lazy">
                     <span style="position:absolute; top:10px; left:10px; background:${badgeColor}; color:#fff; font-size:11px; font-weight:700; text-transform:uppercase; padding:3px 8px; border-radius:4px; letter-spacing:0.5px;">
-                        ${video.category_label || video.category}
+                        ${badgeText}
                     </span>
                     <div class="srs-play-overlay" style="position:absolute; inset:0; background:rgba(0,0,0,0.45); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.3s ease;">
                         <span style="width:50px; height:50px; border-radius:50%; background:#e53637; color:#fff; display:flex; align-items:center; justify-content:center; font-size:18px; box-shadow:0 0 20px rgba(229,54,55,0.8);">
@@ -160,7 +167,12 @@
 
         let filtered = allVideos;
         if (currentCategory !== 'all') {
-            filtered = allVideos.filter(v => v.category === currentCategory);
+            filtered = allVideos.filter(v => {
+                if (Array.isArray(v.categories)) {
+                    return v.categories.includes(currentCategory);
+                }
+                return v.category === currentCategory;
+            });
         }
 
         if (limit > 0) {
