@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="About Marrez - Sub-Record Studio Artist">
+    <meta name="description" content="Marrez - Sub-Record Studio Artist Profile & Portfolio">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
     <title>Marrez - Sub-Record Studio</title>
@@ -14,13 +13,14 @@
     <!-- Favicon -->
     <link rel="icon" href="img/core-img/favicon.ico">
 
-    <!-- Stylesheet -->
     <!-- Google Fonts Preconnect & Stylesheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,500,500i,600,600i,700,700i&display=swap">
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/artist-detail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -35,139 +35,160 @@
         </div>
     </div>
 
-  <!-- ##### Header Area Start ##### -->
-  <header class="header-area">
-    <!-- Navbar Area -->
-    <div class="oneMusic-main-menu">
-        <div class="classy-nav-container breakpoint-off">
-            <div class="container">
-                <!-- Menu -->
-                <nav class="classy-navbar justify-content-between" id="oneMusicNav">
-
-                    <!-- Nav brand -->
-                    <a href="index.html" class="nav-brand"><img src="img/core-img/logoSRS.png" alt="Sub-Record Studio Home"></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
                     <!-- Menu -->
-                    <div class="classy-menu">
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
-                        <!-- Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logoSRS.png" alt="Sub-Record Studio"></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
                         </div>
 
-                        <!-- Nav Start -->
-                        <div class="classynav center-menu">
-                         <ul>
-                             <li><a href="index.html">Home</a></li>
-                             <li><a href="latest-releases.html">Releases</a></li>
-                             <li><a href="artist.html">Artist</a></li>
-                             <li><a href="pricelist.html">Pricelist</a></li>
-                             <li><a href="blog.html">About Us</a></li>
-                             <li><a href="contact.html">Contact</a></li>
-                             <li>
-                                 <a href="https://www.youtube.com/@subrecordstudio" class="btn btn-danger btn-sm d-flex align-items-center gap-2" style="white-space:nowrap;" target="_blank">
-                                     <i class="fa-brands fa-youtube"></i>
-                                     <span>Subscribe</span>
-                                 </a>
-                             </li>
-                         </ul>
-                     </div>
-                     <!-- Nav End -->
+                        <!-- Menu -->
+                        <div class="classy-menu">
 
-                    </div>
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav center-menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="latest-releases.html">Releases</a></li>
+                                    <li><a href="artist.html">Artist</a></li>
+                                    <li><a href="pricelist.html">Pricelist</a></li>
+                                    <li><a href="blog.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li>
+                                        <a href="https://www.youtube.com/@subrecordstudio" class="btn btn-danger btn-sm d-flex align-items-center gap-2" style="white-space:nowrap;" target="_blank">
+                                            <i class="fa-brands fa-youtube"></i>
+                                            <span>Subscribe</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
                 </div>
-                <!-- Nav End -->
-
-                    </div>
-                </nav>
             </div>
         </div>
-    </div>
-</header>
-<!-- ##### Header Area End ##### -->
+    </header>
+    <!-- ##### Header Area End ##### -->
 
-    <!-- ##### Breadcumb Area Start ##### -->
-    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/marrezz.webp);"> <!-- Use artist image -->
+    <!-- ##### Hero / Breadcrumb Area Start ##### -->
+    <section class="breadcumb-area srs-artist-hero bg-img" style="background-image: url('img/bg-img/marrezz.webp');">
         <div class="bradcumbContent">
-            <p>Sub-Record Studio Artist</p>
-            <h2>Marrez</h2>
+            <span class="srs-hero-role-pill"><i class="fa-solid fa-microphone-lines"></i> Sub-Record Studio Artist</span>
+            <h1 class="srs-hero-artist-name">Marrez</h1>
         </div>
     </section>
-    <!-- ##### Breadcumb Area End ##### -->
+    <!-- ##### Hero / Breadcrumb Area End ##### -->
 
-    <!-- ##### Artist Details Area Start ##### -->
-    <section class="section-padding-100">
+    <!-- ##### Artist Detail Area Start ##### -->
+    <section class="srs-artist-detail-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4">
-                    <div style="background:#18181c; border:1px solid #2e2e36; border-radius:14px; overflow:hidden; padding:20px; text-align:center;">
-                        <img src="img/bg-img/marrezz.webp" alt="Marrez" style="width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:10px; margin-bottom:15px;">
-                        <h4 style="color:#fff; margin-bottom:4px;">Marrez</h4>
-                        <p style="color:#e5a93b; font-size:13px; font-weight:600; margin-bottom:12px;">Pop / Indie Singer-Songwriter</p>
-                        <div class="artist-social-info d-flex justify-content-center gap-3 mb-3">
-                            <a href="https://www.instagram.com/marrez___/" target="_blank" title="Instagram @marrez___"><i class="fa fa-instagram fa-2x" style="color:#e1306c;"></i></a>
-                            <a href="https://open.spotify.com/artist/2ib97wyQUkfY7zZnNtQB1U" target="_blank" title="Spotify Profile"><i class="fa fa-spotify fa-2x" style="color:#1db954;"></i></a>
-                            <a href="https://www.youtube.com/@subrecordstudio" target="_blank" title="YouTube Channel"><i class="fa fa-youtube fa-2x" style="color:#ff0000;"></i></a>
+
+                <!-- Left Column: Artist Profile Card -->
+                <div class="col-12 col-md-5 col-lg-4 mb-4 mb-md-0">
+                    <div class="srs-artist-profile-card srs-sticky-profile">
+                        <div class="srs-artist-avatar-wrap">
+                            <img src="img/bg-img/marrezz.webp" alt="Marrez" class="srs-artist-avatar-img">
                         </div>
-                        <a href="https://wa.me/6282245770851?text=Halo%20Sub-Record%20Studio,%20saya%20ingin%20booking%20talent%20Marrez%20untuk%20acara%20kami." target="_blank" class="srs-cta-btn w-100">
-                            <i class="fa-brands fa-whatsapp"></i> Booking Marrez
-                        </a>
+                        <h2 class="srs-artist-card-name">Marrez</h2>
+                        <div class="srs-artist-card-role">Pop / Indie Singer-Songwriter</div>
+                        <div class="srs-artist-social-bar">
+                            <a href="https://www.instagram.com/marrez___/" target="_blank" rel="noopener noreferrer" class="srs-social-link insta" title="Instagram @marrez___">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://open.spotify.com/artist/2ib97wyQUkfY7zZnNtQB1U" target="_blank" rel="noopener noreferrer" class="srs-social-link spotify" title="Spotify Artist Profile">
+                                <i class="fa-brands fa-spotify"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@subrecordstudio" target="_blank" rel="noopener noreferrer" class="srs-social-link youtube" title="YouTube Channel">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-8 mt-4 mt-md-0">
-                    <span class="srs-artist-badge"><i class="fa fa-heart mr-1"></i> Talent Resmi Sub-Record Studio</span>
-                    <h3 style="color:#fff; font-size:26px; font-weight:800; margin-bottom:15px;">Tentang Marrez</h3>
-                    <p style="color:#ccc; font-size:15px; line-height:1.7; margin-bottom:25px;">
-                        <strong>Marrez</strong> adalah penyanyi dan musisi pop balada dengan karakter vokal yang lembut, hangat, dan sarat emosi. Single perdananya, <em>"Bersamanya"</em>, diproduksi dan dirilis bersama Sub-Record Studio, menyuguhkan perpaduan aransemen akustik dan balada modern yang tulus dan menenangkan. Sebagai talent panggung, Marrez siap mengisi sesi akustik intim di kafe, wedding intimate, maupun kolaborasi penulisan lagu baru.
-                    </p>
 
-                    <!-- Section 1: Karya Bersama Sub-Record Studio -->
-                    <div class="mb-4">
-                        <h4 style="color:#fff; font-size:18px; font-weight:700; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
-                            <i class="fa fa-record-vinyl" style="color:#e53637;"></i> Karya Bersama Sub-Record Studio:
-                        </h4>
-                        <div class="row">
-                            <div class="col-12 col-sm-6 mb-2">
-                                <div class="srs-release-item-card">
-                                    <img src="img/bg-img/artworkbersamanya.webp" alt="Bersamanya" class="srs-release-thumb">
-                                    <div class="srs-release-details">
-                                        <h6>Bersamanya</h6>
-                                        <p>Single Perdana (Produced by Sub-Record Studio)</p>
-                                        <a href="https://open.spotify.com/intl-id/track/0fLekOVqVPUqJDdO7hNFca?si=7f609af696b54fef" target="_blank" style="color:#1db954; font-size:12px; font-weight:600;"><i class="fa fa-spotify"></i> Putar di Spotify</a>
+                <!-- Right Column: Biography & Portfolios -->
+                <div class="col-12 col-md-7 col-lg-8">
+                    <div class="srs-artist-content">
+
+                        <span class="srs-artist-badge">
+                            <i class="fa-solid fa-heart"></i> Talent Resmi Sub-Record Studio
+                        </span>
+
+                        <h2 class="srs-artist-bio-title">Tentang Marrez</h2>
+
+                        <p class="srs-artist-bio-text">
+                            <strong>Marrez</strong> adalah penyanyi dan musisi pop balada dengan karakter vokal yang lembut, hangat, dan sarat emosi. Single perdananya, <em>"Bersamanya"</em>, diproduksi dan dirilis bersama Sub-Record Studio, menyuguhkan perpaduan aransemen akustik dan balada modern yang tulus dan menenangkan. Sebagai talent panggung, Marrez siap mengisi sesi akustik intim di kafe, wedding intimate, maupun kolaborasi penulisan lagu baru.
+                        </p>
+
+                        <!-- Section 1: Karya Bersama Sub-Record Studio -->
+                        <div class="mb-4">
+                            <h3 class="srs-content-section-title">
+                                <i class="fa-solid fa-record-vinyl" style="color: var(--srs-red);"></i> Karya Bersama Sub-Record Studio:
+                            </h3>
+                            <div class="srs-release-grid">
+
+                                <!-- Bersamanya -->
+                                <a href="https://open.spotify.com/intl-id/track/0fLekOVqVPUqJDdO7hNFca?si=7f609af696b54fef" target="_blank" rel="noopener noreferrer" class="srs-release-card">
+                                    <img src="img/bg-img/artworkbersamanya.webp" alt="Bersamanya" class="srs-release-card-thumb">
+                                    <div class="srs-release-card-info">
+                                        <div class="srs-release-card-title">Bersamanya</div>
+                                        <div class="srs-release-card-desc">Single Perdana (Produced by Sub-Record Studio)</div>
+                                        <span class="srs-release-card-action spotify">
+                                            <i class="fa-brands fa-spotify"></i> Putar di Spotify
+                                        </span>
                                     </div>
-                                </div>
+                                </a>
+
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Section 2: Spotify & Diskografi Lengkap -->
-                    <div class="mb-4">
-                        <h4 style="color:#fff; font-size:18px; font-weight:700; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
-                            <i class="fa-brands fa-spotify" style="color:#1db954;"></i> Dengarkan Diskografi di Spotify:
-                        </h4>
-                        <div class="spotify-embed">
-                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2ib97wyQUkfY7zZnNtQB1U?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <!-- Section 2: Spotify & Diskografi Lengkap -->
+                        <div class="mb-4">
+                            <h3 class="srs-content-section-title">
+                                <i class="fa-brands fa-spotify" style="color: var(--srs-spotify);"></i> Dengarkan Diskografi di Spotify:
+                            </h3>
+                            <div class="srs-spotify-wrapper">
+                                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2ib97wyQUkfY7zZnNtQB1U?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="d-flex flex-wrap gap-2 mt-4">
-                        <a href="artist.html" class="btn oneMusic-btn"><i class="fa fa-arrow-left"></i> Kembali ke Daftar Artis</a>
-                        <a href="latest-releases.html" class="btn btn-outline-light" style="border-radius:30px; padding:12px 24px; font-weight:600;">Lihat Portofolio Video</a>
+                        <!-- Bottom Navigation Actions -->
+                        <div class="srs-artist-bottom-nav">
+                            <a href="artist.html" class="srs-nav-btn-back">
+                                <i class="fa-solid fa-arrow-left"></i> Kembali ke Daftar Artis
+                            </a>
+                            <a href="latest-releases.html" class="srs-nav-btn-secondary">
+                                <i class="fa-solid fa-circle-play"></i> Lihat Portofolio Video
+                            </a>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    <!-- ##### Artist Details Area End ##### -->
-
+    <!-- ##### Artist Detail Area End ##### -->
 
     <!-- ##### Contact Area Start ##### -->
-    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/arcade.webp);">
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url('img/bg-img/arcade.webp');">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -176,10 +197,10 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="row">
                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="500ms" style="color: white;">
-                    <a href="https://api.whatsapp.com/send/?phone=6282245770851&text&type=phone_number&app_absent=0" class="btn oneMusic-btn" type="submit">Contact Us via WhatsApp <i class="fa fa-angle-double-right" style="color: white;"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=6282245770851&text&type=phone_number&app_absent=0" class="btn oneMusic-btn" target="_blank" rel="noopener noreferrer">Contact Us via WhatsApp <i class="fa fa-angle-double-right" style="color: white;"></i></a>
                 </div>
             </div>
         </div>
@@ -191,10 +212,10 @@
         <div class="container">
             <div class="row d-flex flex-wrap align-items-center">
                 <div class="col-12 col-md-6">
-                    <a href="index.html"><img src="img/core-img/logoSRS.png" alt=""></a>
-                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Website made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.instagram.com/aryaveda__/" target="_blank">Arya Veda</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    <a href="index.html"><img src="img/core-img/logoSRS.png" alt="Sub-Record Studio"></a>
+                    <p class="copywrite-text">
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Website made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.instagram.com/aryaveda__/" target="_blank">Arya Veda</a>
+                    </p>
                 </div>
 
                 <div class="col-12 col-md-6">
@@ -212,8 +233,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
         </div>
     </footer>
-    <!-- ##### Footer Area Start ##### -->
-
+    <!-- ##### Footer Area End ##### -->
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
@@ -226,8 +246,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
-    <script src="https://kit.fontawesome.com/cbda7c90b0.js" crossorigin="anonymous" defer></script>
-
 </body>
 
 </html>

@@ -35,232 +35,221 @@
         </div>
     </div>
 
-  <!-- ##### Header Area Start ##### -->
-  <header class="header-area">
-    <!-- Navbar Area -->
-    <div class="oneMusic-main-menu">
-        <div class="classy-nav-container breakpoint-off">
-            <div class="container">
-                <!-- Menu -->
-                <nav class="classy-navbar justify-content-between" id="oneMusicNav">
-
-                    <!-- Nav brand -->
-                    <a href="index.html" class="nav-brand"><img src="img/core-img/logoSRS.png" alt="Sub-Record Studio Home"></a>
-
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
-
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
                     <!-- Menu -->
-                    <div class="classy-menu">
+                    <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
-                        <!-- Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        <!-- Nav brand -->
+                        <a href="index.html" class="nav-brand"><img src="img/core-img/logoSRS.png" alt="Sub-Record Studio"></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
                         </div>
 
-                        <!-- Nav Start -->
-                        <div class="classynav center-menu">
-                         <ul>
-                             <li><a href="index.html">Home</a></li>
-                             <li><a href="latest-releases.html">Releases</a></li>
-                             <li><a href="artist.html">Artist</a></li>
-                             <li><a href="pricelist.html">Pricelist</a></li>
-                             <li><a href="blog.html">About Us</a></li>
-                             <li><a href="contact.html">Contact</a></li>
-                             <li>
-                                 <a href="https://www.youtube.com/@subrecordstudio" class="btn btn-danger btn-sm d-flex align-items-center gap-2" style="white-space:nowrap;" target="_blank">
-                                     <i class="fa-brands fa-youtube"></i>
-                                     <span>Subscribe</span>
-                                 </a>
-                             </li>
-                         </ul>
-                     </div>
-                     <!-- Nav End -->
+                        <!-- Menu -->
+                        <div class="classy-menu">
 
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
 
-                        <!-- Cart Button -->
-                        
-                    </div>
+                            <!-- Nav Start -->
+                            <div class="classynav center-menu">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="latest-releases.html">Releases</a></li>
+                                    <li><a href="artist.html">Artist</a></li>
+                                    <li><a href="pricelist.html">Pricelist</a></li>
+                                    <li><a href="blog.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li>
+                                        <a href="https://www.youtube.com/@subrecordstudio" class="btn btn-danger btn-sm d-flex align-items-center gap-2" style="white-space:nowrap;" target="_blank">
+                                            <i class="fa-brands fa-youtube"></i>
+                                            <span>Subscribe</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+
+                        </div>
+                    </nav>
                 </div>
-                <!-- Nav End -->
-
-                    </div>
-                </nav>
             </div>
         </div>
-    </div>
-</header>
-<!-- ##### Header Area End ##### -->
+    </header>
+    <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
-    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/prabowo.webp);">
-        <div class="bradcumbContent">
-            <!-- <p>See what’s new</p> -->
-            <h2>Artists</h2>
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/bgStudio.webp); padding: 110px 0 80px;">
+        <div class="bradcumbContent text-center">
+            <h2 style="font-size:38px; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; color:#fff; margin-bottom:10px;">Artist</h2>
         </div>
     </section>
     <!-- ##### Breadcumb Area End ##### -->
 
-    <!-- ##### Album Catagory Area Start ##### -->
-    <section class="album-catagory section-padding-100-0" style="background:#0f0f11; padding-bottom: 70px;">
+    <!-- ##### Artist Roster Section Start ##### -->
+    <section class="srs-roster-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <span class="srs-artist-badge"><i class="fa fa-microphone mr-1"></i> Official SRS Talents</span>
-                    <h2 style="color:#fff; font-weight:800; margin-top:8px; margin-bottom:12px;">Artists & Producers</h2>
-                    <p style="color:#9e9ea8; max-width:700px; margin:0 auto; font-size:15px; line-height:1.6;">
-                        Musisi, penyanyi, pencipta lagu, dan vocal director resmi di bawah naungan serta partner produksi Sub-Record Studio.
-                    </p>
+            <!-- Sub-Navigation & Filter Bar -->
+            <div class="srs-roster-subnav">
+                <div class="srs-filter-group">
+                    <button class="srs-filter-btn active" data-filter="all"><i class="fa-solid fa-border-all mr-1"></i> Semua Artis</button>
+                    <button class="srs-filter-btn" data-filter="singer"><i class="fa-solid fa-microphone mr-1"></i> Penyanyi & Talent</button>
+                    <button class="srs-filter-btn" data-filter="producer"><i class="fa-solid fa-sliders mr-1"></i> Produser & Director</button>
+                </div>
+                <div class="srs-roster-counter" id="srs-artist-counter">
+                    4 ARTIS PILIHAN
                 </div>
             </div>
 
-            <div class="row justify-content-center">
+            <!-- Artist Cards Grid -->
+            <div class="row" id="srs-roster-grid">
 
                 <!-- Cindy Leivana -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="srs-card h-100 text-center" style="background:#151517; border:1px solid #282830; border-radius:12px; padding:25px 20px;">
-                        <a href="cindy-leivana.html" style="display:block; overflow:hidden; border-radius:10px; margin-bottom:15px;">
-                            <img src="img/bg-img/PPCindy.webp" alt="Cindy Leivana" style="width:100%; aspect-ratio:1/1; object-fit:cover; transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                        </a>
-                        <span class="srs-artist-badge mb-2">Talent SRS</span>
-                        <h4 style="color:#fff; font-size:18px; margin-bottom:4px;"><a href="cindy-leivana.html" style="color:#fff;">Cindy Leivana</a></h4>
-                        <p style="color:#e5a93b; font-size:12px; font-weight:600; margin-bottom:8px;">Singer-Songwriter & Frontwoman</p>
-                        <p style="color:#888; font-size:12px; line-height:1.5; margin-bottom:18px;">Juara 2 FLS2N Nasional & Finalis La Academia Junior 2 SCTV. Pop & orchestral arrangement.</p>
-                        <div class="d-flex gap-2 justify-content-center mt-auto">
-                            <a href="cindy-leivana.html" class="btn btn-sm btn-outline-light" style="border-radius:20px; font-size:12px; padding:5px 14px;">Profil & Rilis</a>
-                            <a href="https://wa.me/6282245770851?text=Halo%20Sub-Record%20Studio,%20saya%20ingin%20booking%20talent%20Cindy%20Leivana." target="_blank" class="btn btn-sm" style="background:#25D366; color:#fff; border-radius:20px; font-size:12px; padding:5px 14px;">
-                                <i class="fa-brands fa-whatsapp"></i> Booking
-                            </a>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4 srs-roster-col" data-category="singer">
+                    <a href="cindy-leivana.html" class="srs-roster-card">
+                        <div class="srs-roster-img-wrap">
+                            <img src="img/bg-img/PPCindy.webp" alt="Cindy Leivana" class="srs-roster-img" loading="lazy">
+                            <div class="srs-roster-vignette"></div>
                         </div>
-                    </div>
+                        <div class="srs-roster-caption">
+                            <span class="srs-roster-role">Singer-Songwriter</span>
+                            <h3 class="srs-roster-name">Cindy Leivana</h3>
+                            <div class="srs-roster-cta">
+                                <span>Lihat Profil</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- KEZHIKI -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="srs-card h-100 text-center" style="background:#151517; border:1px solid #282830; border-radius:12px; padding:25px 20px;">
-                        <a href="kezhiki.html" style="display:block; overflow:hidden; border-radius:10px; margin-bottom:15px;">
-                            <img src="img/bg-img/PPKezhi.webp" alt="KEZHIKI" style="width:100%; aspect-ratio:1/1; object-fit:cover; transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                        </a>
-                        <span class="srs-artist-badge mb-2">Talent SRS</span>
-                        <h4 style="color:#fff; font-size:18px; margin-bottom:4px;"><a href="kezhiki.html" style="color:#fff;">KEZHIKI</a></h4>
-                        <p style="color:#e5a93b; font-size:12px; font-weight:600; margin-bottom:8px;">Singer-Songwriter & Indie Artist</p>
-                        <p style="color:#888; font-size:12px; line-height:1.5; margin-bottom:18px;">Pencipta lagu berkarakter vokal manis dan hangat dengan single hits 'Sunflowers'.</p>
-                        <div class="d-flex gap-2 justify-content-center mt-auto">
-                            <a href="kezhiki.html" class="btn btn-sm btn-outline-light" style="border-radius:20px; font-size:12px; padding:5px 14px;">Profil & Rilis</a>
-                            <a href="https://wa.me/6282245770851?text=Halo%20Sub-Record%20Studio,%20saya%20ingin%20booking%20talent%20KEZHIKI." target="_blank" class="btn btn-sm" style="background:#25D366; color:#fff; border-radius:20px; font-size:12px; padding:5px 14px;">
-                                <i class="fa-brands fa-whatsapp"></i> Booking
-                            </a>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4 srs-roster-col" data-category="singer">
+                    <a href="kezhiki.html" class="srs-roster-card">
+                        <div class="srs-roster-img-wrap">
+                            <img src="img/bg-img/PPKezhi.webp" alt="KEZHIKI" class="srs-roster-img" loading="lazy">
+                            <div class="srs-roster-vignette"></div>
                         </div>
-                    </div>
+                        <div class="srs-roster-caption">
+                            <span class="srs-roster-role">Doctor & Singer-Songwriter</span>
+                            <h3 class="srs-roster-name">KEZHIKI</h3>
+                            <div class="srs-roster-cta">
+                                <span>Lihat Profil</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- Marrez -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="srs-card h-100 text-center" style="background:#151517; border:1px solid #282830; border-radius:12px; padding:25px 20px;">
-                        <a href="marrez.html" style="display:block; overflow:hidden; border-radius:10px; margin-bottom:15px;">
-                            <img src="img/bg-img/marrezz.webp" alt="Marrez" style="width:100%; aspect-ratio:1/1; object-fit:cover; transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                        </a>
-                        <span class="srs-artist-badge mb-2">Talent SRS</span>
-                        <h4 style="color:#fff; font-size:18px; margin-bottom:4px;"><a href="marrez.html" style="color:#fff;">Marrez</a></h4>
-                        <p style="color:#e5a93b; font-size:12px; font-weight:600; margin-bottom:8px;">Pop / Indie Singer-Songwriter</p>
-                        <p style="color:#888; font-size:12px; line-height:1.5; margin-bottom:18px;">Solois pop balada berpenjiwaan mendalam lewat single debut 'Bersamanya'.</p>
-                        <div class="d-flex gap-2 justify-content-center mt-auto">
-                            <a href="marrez.html" class="btn btn-sm btn-outline-light" style="border-radius:20px; font-size:12px; padding:5px 14px;">Profil & Rilis</a>
-                            <a href="https://wa.me/6282245770851?text=Halo%20Sub-Record%20Studio,%20saya%20ingin%20booking%20talent%20Marrez." target="_blank" class="btn btn-sm" style="background:#25D366; color:#fff; border-radius:20px; font-size:12px; padding:5px 14px;">
-                                <i class="fa-brands fa-whatsapp"></i> Booking
-                            </a>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4 srs-roster-col" data-category="singer">
+                    <a href="marrez.html" class="srs-roster-card">
+                        <div class="srs-roster-img-wrap">
+                            <img src="img/bg-img/marrezz.webp" alt="Marrez" class="srs-roster-img" loading="lazy">
+                            <div class="srs-roster-vignette"></div>
                         </div>
-                    </div>
+                        <div class="srs-roster-caption">
+                            <span class="srs-roster-role">Singer-Songwriter</span>
+                            <h3 class="srs-roster-name">Marrez</h3>
+                            <div class="srs-roster-cta">
+                                <span>Lihat Profil</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- Anton Yoga -->
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="srs-card h-100 text-center" style="background:#151517; border:1px solid #282830; border-radius:12px; padding:25px 20px;">
-                        <a href="anton-yoga.html" style="display:block; overflow:hidden; border-radius:10px; margin-bottom:15px;">
-                            <img src="img/bg-img/anton.webp" alt="Anton Yoga" style="width:100%; aspect-ratio:1/1; object-fit:cover; transition:transform 0.4s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                        </a>
-                        <span class="srs-artist-badge mb-2">Studio Producer / Vocalist</span>
-                        <h4 style="color:#fff; font-size:18px; margin-bottom:4px;"><a href="anton-yoga.html" style="color:#fff;">Anton Yoga</a></h4>
-                        <p style="color:#e5a93b; font-size:12px; font-weight:600; margin-bottom:8px;">Vocal Director & Arranger</p>
-                        <p style="color:#888; font-size:12px; line-height:1.5; margin-bottom:18px;">Penata vokal & sessionist profesional pada OST 'Langit Senja' (Jingga & Senja 2) & katalog SRS.</p>
-                        <div class="d-flex gap-2 justify-content-center mt-auto">
-                            <a href="anton-yoga.html" class="btn btn-sm btn-outline-light" style="border-radius:20px; font-size:12px; padding:5px 14px;">Profil & Karya</a>
-                            <a href="https://wa.me/6282245770851?text=Halo%20Sub-Record%20Studio,%20saya%20ingin%20konsultasi%20Vocal%20Director%20dengan%20Anton%20Yoga." target="_blank" class="btn btn-sm" style="background:#25D366; color:#fff; border-radius:20px; font-size:12px; padding:5px 14px;">
-                                <i class="fa-brands fa-whatsapp"></i> Booking
+                <div class="col-12 col-sm-6 col-lg-3 mb-4 srs-roster-col" data-category="producer">
+                    <a href="anton-yoga.html" class="srs-roster-card">
+                        <div class="srs-roster-img-wrap">
+                            <img src="img/bg-img/anton.webp" alt="Anton Yoga" class="srs-roster-img" loading="lazy">
+                            <div class="srs-roster-vignette"></div>
+                        </div>
+                        <div class="srs-roster-caption">
+                            <span class="srs-roster-role">Artist & Vocal Director</span>
+                            <h3 class="srs-roster-name">Anton Yoga</h3>
+                            <div class="srs-roster-cta">
+                                <span>Lihat Profil</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ##### Artist Roster Section End ##### -->
+
+    <!-- ##### Studio Collaboration & Booking Section Start ##### -->
+    <section class="srs-collab-section">
+        <div class="container">
+            <div class="srs-collab-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-7 text-center text-lg-left mb-4 mb-lg-0">
+                        <span class="srs-collab-badge"><i class="fa-solid fa-compact-disc mr-1"></i> SRS Production & Management</span>
+                        <h2 class="srs-collab-heading">Kolaborasi & Booking Talent SRS</h2>
+                        <p class="srs-collab-desc">
+                            Studio produksi kami siap memfasilitasi rekaman lagu, aransemen orkestrasi, hingga penampilan live musisi Sub-Record Studio untuk kebutuhan acara Anda.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-5 text-center text-lg-right">
+                        <div class="srs-collab-buttons justify-content-center justify-content-lg-end">
+                            <a href="https://wa.me/6282245770851?text=Halo%20Sub-Record%20Studio,%20saya%20ingin%20berkolaborasi%20atau%20booking%20talent%20SRS." target="_blank" class="srs-btn-primary">
+                                <i class="fa-brands fa-whatsapp"></i> Hubungi Manajemen
+                            </a>
+                            <a href="pricelist.html" class="srs-btn-outline">
+                                Layanan & Pricelist <i class="fa-solid fa-arrow-right ml-1"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <!-- ##### Album Catagory Area End ##### -->
+    <!-- ##### Studio Collaboration & Booking Section End ##### -->
 
-    
+    <!-- Roster Filter Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var filterBtns = document.querySelectorAll('.srs-filter-btn');
+            var rosterCols = document.querySelectorAll('.srs-roster-col');
+            var counterEl = document.getElementById('srs-artist-counter');
 
+            filterBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(function(b) { b.classList.remove('active'); });
+                    this.classList.add('active');
 
-    
+                    var filter = this.getAttribute('data-filter');
+                    var visibleCount = 0;
 
-    <!-- ##### Contact Area Start ##### -->
-    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/arcade.webp);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading white wow fadeInUp" data-wow-delay="100ms" style="color: white;">
-                        <h2>Kami menyediakan</h2>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="col-12">
-                <div class="row">
-    
-                    <!-- Single Service Area -->
-                    <div class="col-12 col-md-6">
-                        <div class="single-service-area d-flex flex-wrap mb-50">
-                            <div class="icon">
-                                <span class="icon-microphone" style="color: white; border-color: white;"></span> <!-- Icon color and bounding box color set to white -->
-                            </div>
-                            <div class="text" style="color: white;">
-                                <h5 style="color: white;">Produksi dan Rekaman</h5>
-                                <p style="color: white;">Jasa produksi dan rekaman musik profesional untuk membawa karya Anda ke tingkat berikutnya.</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Single Service Area -->
-                    <div class="col-12 col-md-6">
-                        <div class="single-service-area d-flex flex-wrap mb-50">
-                            <div class="icon">
-                                <span class="icon-favorites" style="color: white; border-color: white;"></span> <!-- Icon color and bounding box color set to white -->
-                            </div>
-                            <div class="text" style="color: white;">
-                                <h5 style="color: white;">Entertainment</h5>
-                                <p style="color: white;">Penyedia talent musik untuk acara-acara spesial Anda. Dari penyanyi hingga band, kami memberikan hiburan yang tak terlupakan.</p>
-                            </div>
-                        </div>
-                    </div>
-    
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <!-- Contact Form Area -->
-    
-                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="500ms" style="color: white;">
-                        <a href="https://api.whatsapp.com/send/?phone=6282245770851&text&type=phone_number&app_absent=0" class="btn oneMusic-btn" type="submit">Hubungi kami via WhatsApp <i class="fa fa-angle-double-right" style="color: white;"></i></a> <!-- Icon color set to white -->
-                    </div>
-                </div>
-    
-            </div>
-        </div>
-    </section>
-    
-                        
-    <!-- ##### Contact Area End ##### -->
+                    rosterCols.forEach(function(col) {
+                        var cat = col.getAttribute('data-category');
+                        if (filter === 'all' || cat === filter) {
+                            col.style.display = '';
+                            visibleCount++;
+                        } else {
+                            col.style.display = 'none';
+                        }
+                    });
+
+                    if (counterEl) {
+                        counterEl.textContent = visibleCount + ' ARTIS PILIHAN';
+                    }
+                });
+            });
+        });
+    </script>
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
