@@ -19,7 +19,7 @@ Website resmi untuk **Sub-Record Studio** (Yogyakarta) — studio rekaman, produ
 ### 2. Halaman Pricelist Interaktif & Responsif (`pricelist.html`)
 - Menggantikan gambar statis dengan kartu harga interaktif (responsive HTML/CSS):
   - **Cover Song Package:** Promo spesial 400k (Free aransemen akustik, 4 jam rekaman, mixing-mastering, shooting & editing video klip).
-  - **All-In Package & Recording:** Mulai 200k - 300k.
+  - **All-In Recording Package:** Akustik (750k), Full Band (1.500k).
   - **Mixing & Mastering:** Akustik (500k), Full Band (mulai 1.000k tergantung kompleksitas).
   - **Music Composing & Aransemen:** Akustik (350k), Full Band (1.000k), Orkestra (1.500k), Full Song Production (5.000k).
   - **Live Entertainment:** Reguler kafe (300k), Akustik (800k), Live Band (2.000k), Brass Band (3.500k), Session Player (350k).
