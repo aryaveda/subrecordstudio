@@ -16,7 +16,14 @@ Website resmi untuk **Sub-Record Studio** (Yogyakarta) — studio rekaman, produ
   - *Audio Production & Mixing Tips*
 - **Inline Video Modal Popup:** Pengunjung dapat menonton video langsung di dalam website tanpa perlu meninggalkan halaman (zero bounce rate).
 
-### 2. Halaman Pricelist Interaktif & Responsif (`pricelist.html`)
+### 2. Formulir Inquiry Proyek Hybrid (`inquiry.html`)
+- **Portal Brief Terintegrasi:** Halaman khusus `inquiry.html` yang memuat panduan 3 langkah brief proyek, tautan langsung ke Google Forms (`https://forms.gle/srNNPX2XFZpdFL4C8`), dan embed iframe formulir.
+- **Strategi Hybrid Funnel:**
+  - Klien sewa shift harian/cepat tetap terlayani instan via direct WhatsApp.
+  - Klien produksi single/album/aransemen diarahkan mengisi brief (genre, referensi Spotify/YouTube, deadline rilis).
+  - Tombol dual-action pada paket *Complete Music Production* dan CTA banner utama.
+
+### 3. Halaman Pricelist Interaktif & Responsif (`pricelist.html`)
 - Menggantikan gambar statis dengan kartu harga interaktif (responsive HTML/CSS):
   - **Cover Song Package:** Promo spesial 850k (Free aransemen akustik, rekaman audio 3 jam, mixing-mastering, shooting & editing video klip).
   - **All-In Recording Package:** Akustik (750k), Full Band (1.500k).
